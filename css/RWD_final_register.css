@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    background: rgb(239, 233, 231);
+}
+
+.header{
+    position: absolute;
+    z-index: 2;
+}
+
+.title{
+    height: 56px;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.75);
+}
+.title img{
+    margin-left: 42px;
+}
+.menu{
+    float: right;
+    margin-right: 20px;
+}
+.dropdown{
+    float: left;
+    margin-left: 30px;
+}
+.dropdown a{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.banner{
+    background-image: url(/images/header_desktop.png);
+    height: 420px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.banner_word{
+    width: 460px;
+    height: 152px;
+    background: rgba(0,0,0,0.35);
+    margin-top: 123px;
+    text-align: center;
+}
+.banner_word h1{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.banner_word p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 16px;
+    line-height: 1.5;
+}
+.banner_word i{
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content h1{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-family: NotoSansCJKtc-Medium;
+    font-size: 20px;
+    color: #3D1101;
+}
+.content .register{
+    width: 620px;
+    height: 316px;
+    border-top: 3px solid #FF5E45;
+    margin-top: 35px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content .register h1{
+    font-family: NotoSansCJKtc-Black;
+    font-size: 18px;
+    color: #3D1101;
+    margin-top: 15px;
+}
+.register_content{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.register_content p{
+    padding-right: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+.content .login p{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #3D1101;
+    float: left;
+}
+.content .email{
+    position: relative;
+    margin-bottom: 15px;
+}
+.content .email input{
+    margin-top: 3px;
+    width: 285px;
+    height: 26px;
+    text-indent: 30px;
+}
+.content .email i{
+    position: absolute;
+    color: rgba(61,17,0,0.50);
+    top: 35px;
+    left: 13px;
+    font-size: 15px;
+}
+.content .password{
+    position: relative;
+    margin-bottom: 3px;
+}
+.content .password input{
+    margin-top: 3px;
+    width: 285px;
+    height: 26px;
+    text-indent: 30px;
+}
+.content .password i{
+    position: absolute;
+    color: rgba(61,17,0,0.50);
+    top: 35px;
+    left: 13px;
+    font-size: 15px;
+}
+.content .password_confirm{
+    position: relative;
+}
+.content .password_confirm input{
+    margin-top: 3px;
+    width: 285px;
+    height: 26px;
+    text-indent: 30px;
+}
+.content .password_confirm i{
+    position: absolute;
+    color: rgba(61,17,0,0.50);
+    top: 12px;
+    left: 13px;
+    font-size: 15px;
+}
+.content .login a{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 14px;
+    color: #FF5E45;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 4px;
+    width: 100%;
+}
+.content .login .login_button{
+    width: 125px;
+    height: 32px;
+    display: inline;
+    background: #F56C23;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    float: right;
+}
+
+.footer{
+    display: flex;
+    justify-content: start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 43px;
+}
+.footer h1{
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 24px;
+    color: #3D1101;
+    margin-bottom: 16px;
+}
+.footer p{
+    width: 299px;
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #3D1101;
+    margin-right: 20px;
+    line-height: 1.5;
+}
+.footer img{
+    margin-top: 4px;
+    margin-left: 55px;
+}
+.footer i{
+    float: right;
+    margin-left: 11px;
+    margin-top: 22px;
+    font-family: FontAwesome;
+    font-size: 36px;
+}
