@@ -140,7 +140,7 @@ table {
 }
 
 .banner{
-    background-image: url(/images/header_desktop.png);
+    background-image: url(../images/header_desktop.png);
     background-position: center;
     height: 420px;
     position: relative;
@@ -150,7 +150,7 @@ table {
 }
 @media(max-width:337px){
     .banner{
-        background-image: url(/images/header_mobile.png);
+        background-image: url(../images/header_mobile.png);
     }
 }
 .banner_word{
